@@ -30,7 +30,7 @@ const Chat = () => {
   const room = searchParams.get("room");
 
   useEffect(() => {
-    socket = io(ENDPOINT);
+    socket = io(ENDPOINT, { transports: ["websocket", "polling"] });
 
     socket.emit("join", { username: name, room }, (error) => {
       if (error) {
