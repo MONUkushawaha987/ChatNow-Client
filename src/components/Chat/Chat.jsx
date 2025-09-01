@@ -16,7 +16,8 @@ import { PrimaryButton } from "../UI/Button/Button";
 import { TextInput } from "../UI/Input/Input";
 
 let socket;
-const ENDPOINT = process.env.REACT_APP_API_URL;
+// const ENDPOINT = process.env.REACT_APP_API_URL;
+const ENDPOINT = "https://chatitnow.onrender.com";
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
