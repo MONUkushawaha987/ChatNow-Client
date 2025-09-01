@@ -24,7 +24,7 @@ const Join = () => {
 
   return (
     <JoinContainer>
-      <Title>Welcome to ChatNow</Title>
+      <Title>Welcome to ChatitNow</Title>
       <Subtitle>Join a room to start chatting</Subtitle>
       
       <JoinForm onSubmit={handleSubmit} >
